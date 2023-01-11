@@ -198,3 +198,94 @@ document.write (`Seu outro número elevado ao seu número favorito é ${n2 ** n1
 
 </body>
 </html>
+
+________________________________________________________________________________________________________________________________________
+
+* OPERADORES LÓGICOS
+
+!         NEGAÇÃO
+&&        CONJUNÇÃO
+||        DISJUNÇÃO 
+
+* Na DISJUNÇÃO || (OU), basta que um dos valores seja TRUE para que retorne valor TRUE.
+Exemplo:
+
+TRUE  | TRUE  --- TRUE
+TRUE  | FALSE --- TRUE
+TRUE  | TRUE  --- FALSE
+FALSE | FALSE --- FALSE (sem valor TRUE)
+
+(Quero uma das duas canetas. Uma vermelha, e outra azul. Se eu ganhar qualquer uma delas, ou as duas,
+estarei satisfeito. Se eu não ganhar nenhuma, não estarei satisfeito).
+
+* Na CONJUNÇÃO && (E), deverá constar apenas valores TRUE. Sendo TRUE e FALSE, ou apenas FALSE, negados.
+Exemplo:
+
+TRUE  | TRUE  --- TRUE
+FALSE | FALSE --- FALSE
+FALSE | TRUE  --- FALSE
+FALSE | FALSE --- TRUE
+
+(Quero duas canetas, uma azul e outra vermelha. Se eu ganhar apenas uma delas, ou nenhuma, não estarei
+satisfeito. Preciso das duas).
+
+* Na NEGAÇÃO ! (NÃO), um valor que não é TRUE retorna um valor FALSE. Um valor que não seja FALSE,
+retornará TRUE.
+
+! TRUE -> FALSE (lê-se: se não for TRUE é igual a FALSE)
+! FALSE -> TRUE (lê-se: se não for FALSE é igual a TRUE)
+
+-------------------------------------------------------------------------------------------------------
+
+* ORDEM DE PRECEDÊNCIA
+
+() , ** , /   TUDO QUE ESTÁ ENTRE PARENTESES, POTÊNCIA, DIVISÃO
+> , < , >=    MAIOR, MENOR, MAIOR OU IGUAL
+!             NEGAÇÃO (NÃO)
+&&            CONJUNÇÃO (E)
+||            DISJUNÇÃO (OU)
+-------------------------------------------------------------------------------------------------------
+
+* OPERADORES TERNÁRIOS
+
+     ? , : 
+
+TESTE ? true : false
+
+teste -> teste lógico (true or false) 
+TRUE -> resultado do teste lógico quando verdadeiro
+FALSE -> resultado do teste lógico quando falso
+
+EXEMPLO:
+
+var média = 5.5
+undefined
+média >= 7.0 ? "APROVADO" : "REPROVADO"
+'REPROVADO'
+_________________________________________________________________________________________________________________________________________
+
+*TRATAMENTO DE DOM video 01*
+
+Anotações dessa aula:
+The Differences BetweeninnerHTML, innerText and textContent
+The innerHTML property returns:The text content of the element, including all spacing and inner HTML tags.
+The innerText property returns:Just the text content of the element and all its children, without CSS hidden text spacing and tags, except <script> and <style> elements.
+The textContent property returns:The text content of the element and all descendaces, with spacing and CSS hidden text, but without tags.
+
+Utilizando DOM
+por Marca → getElementsByTagName()
+por ID → getElementsById()
+por Nome → getElementsByName()
+por Classe → getElementsByClassName()
+por Seletor → querrySelector()
+querrySelectorAll()
+
+Utilizando Selector
+Toda <div> é representada por uma #
+Ex.: <div id = ‘msg’> Clique em mim</div>
+var d = window.document.querrySelector(’div#msg’)
+
+Toda Classe é representada por um . (ponto)
+Ex.: <div class = ‘msg’> Clique em mim</div>
+var d = window.document.querrySelector(’div.msg’)
+
