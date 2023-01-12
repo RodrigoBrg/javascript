@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio DOM meu</title>
+    <style>
+        body{
+            font: normal 1.5rem arial;
+        }
+        #area{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            color: black;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Clique aqui!</p>
+
+    </div>
+        
+
+    <script>
+        var a = document.getElementById('area')
+
+        function clicar() {
+         a.innerText='Clicou!'
+         a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'lightgreen'
+            
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'aqua'
+        }
+    </script>
+</body>
+</html>
