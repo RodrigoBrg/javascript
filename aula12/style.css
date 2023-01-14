@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(104, 203, 225);
+    font: normal 1rem arial;
+}
+
+header{
+    text-align: center;
+
+}
+
+
+section{
+    margin: auto;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.267);
+
+}
+div#msg{
+    text-align: center;
+    font-weight: bolder;
+}
+
+div#foto{
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+
+}
+
