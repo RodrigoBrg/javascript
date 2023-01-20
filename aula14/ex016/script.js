@@ -12,6 +12,10 @@ function Contar(){
         let i = Number(ini.value);
         let f = Number(fim.value);
         let p = Number(passo.value)
+        if (p <= 0){
+            alert('Passo inválido! Considerando PASSO 1!')
+            p = 1
+        }
         if(i < f) {
             //Contagem progressiva
             for(let c = i; c <= f; c += p){
