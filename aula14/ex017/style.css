@@ -18,7 +18,7 @@ section{
     margin: auto;
     background-color: whitesmoke;
     width: 500px;
-    height: 400px;
+    height: auto;
     padding: 15px;
     border-radius: 20px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.267);
@@ -26,7 +26,8 @@ section{
 
 }
 #caixa{
-    padding-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 30px;
 }
 
 footer{
