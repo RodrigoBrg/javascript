@@ -1,5 +1,9 @@
 body{
     background-color: rgb(104, 203, 225);
+    background-image: url(pexels-miguel-á.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font: normal 1rem arial;
 }
 
