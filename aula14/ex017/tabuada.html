@@ -9,17 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Gerador de Tabuada</h1>
 
     </header>
 
     <section>
         <div>
-            <p>Número: <input type="number" name="numero" id="numero"> <input type="button" value="Gerar Número"></p>
+            <p>Número: <input type="number" name="numero" id="numero"> <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
 
         </div>
 
-        <div>
+        <div id="caixa">
+            <select name="Tabuada" id="seltab" size="10">
+                <option>Digite um número acima.</option>
+            </select>
 
         </div>
 
